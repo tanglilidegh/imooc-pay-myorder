@@ -5,119 +5,123 @@
 /* ===========
    基本默认值
    =========== */
-   
 html{
-    font-size:62.5%;
-    color:#222;
+    font-size: 62.5%;
+    color: #222;
 }
+
+/*html{*/
+    /*font-size:62.5%;*/
+    /*color:#222;*/
+/*}*/
 
 /* 选中文字的背景色，以及是否有阴影 替代浏览器默认的设置*/
-::selection{
-    background-color: #b3d4fc;
-    text-shadow: none;
-}
+/*::selection{*/
+    /*background-color: #b3d4fc;*/
+    /*text-shadow: none;*/
+/*}*/
 
-ul{
-    margin: 0;
-    padding: 0;
-}
+/*ul{*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
 
-li{
-    list-style: none;
-}
+/*li{*/
+    /*list-style: none;*/
+/*}*/
 
-/* ===========
-   工具样式
-   =========== */
+/*!* ===========*/
+   /*工具样式*/
+   /*=========== *!*/
 
-.center-block{
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
+/*.center-block{*/
+    /*display: block;*/
+    /*margin-right: auto;*/
+    /*margin-left: auto;*/
+/*}*/
 
-.pull-right{
-    float: right !important;
-}
+/*.pull-right{*/
+    /*float: right !important;*/
+/*}*/
 
-.pull-left{
-    float: left !important;
-}
+/*.pull-left{*/
+    /*float: left !important;*/
+/*}*/
 
-.text-right{
-    text-align: right !important;
-}
+/*.text-right{*/
+    /*text-align: right !important;*/
+/*}*/
 
-.text-left{
-    text-align: left !important;
-}
+/*.text-left{*/
+    /*text-align: left !important;*/
+/*}*/
 
-.text-center{
-    text-align: center !important;
-}
+/*.text-center{*/
+    /*text-align: center !important;*/
+/*}*/
 
-/* 隐藏元素 元素的位置也没有 */
-.hide{
-    display: none !important;
-}
+/*!* 隐藏元素 元素的位置也没有 *!*/
+/*.hide{*/
+    /*display: none !important;*/
+/*}*/
 
-.show{
-    display: block !important;
-}
+/*.show{*/
+    /*display: block !important;*/
+/*}*/
 
-/* 隐藏元素 但是元素的位置还在 */
-.invisible{
-    visibility: hidden;
-}
+/*!* 隐藏元素 但是元素的位置还在 *!*/
+/*.invisible{*/
+    /*visibility: hidden;*/
+/*}*/
 
-/* 隐藏文本 */
-.text-hide{
-    font: 0/0 a;
-    color: transparent;
-    text-shadow: none;
-    background-color: transparent;
-    border: 0;
-}
+/*!* 隐藏文本 *!*/
+/*.text-hide{*/
+    /*font: 0/0 a;*/
+    /*color: transparent;*/
+    /*text-shadow: none;*/
+    /*background-color: transparent;*/
+    /*border: 0;*/
+/*}*/
 
-/* 清除浮动 */
+/*!* 清除浮动 *!*/
+/*!*.clearfix:before,*!*/
+/*!*.clearfix:after {*!*/
+/*!*    content: " ";*!*/
+/*!*    display: table;*!*/
+/*!*}*!*/
+
+/*!*.clearfix:after{*!*/
+/*!*    clear: both;*!*/
+/*!*}*!*/
+
+
 /*.clearfix:before,*/
 /*.clearfix:after {*/
-/*    content: " ";*/
-/*    display: table;*/
+    /*content: " ";*/
+    /*display: table;*/
 /*}*/
 
 /*.clearfix:after{*/
-/*    clear: both;*/
+    /*clear: both;*/
 /*}*/
 
 
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
+/*!* ==============*/
+   /*自定义页面样式*/
+   /*============== *!*/
+   /**/
+/*body {*/
+    /*font-size: 1.2rem;*/
+    /*line-height: 1.5;*/
+    /*background-color: #f7f7f7;*/
+/*}*/
 
-.clearfix:after{
-    clear: both;
-}
+/*a{*/
+    /*color: #666;*/
+    /*text-decoration: none;*/
+/*}*/
 
-
-/* ==============
-   自定义页面样式
-   ============== */
-   
-body {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    background-color: #f7f7f7;
-}
-
-a{
-    color: #666;
-    text-decoration: none;
-}
-
-a:hover, a:active{
-    color: #0ae;
-    text-decoration: underline;
-}
+/*a:hover, a:active{*/
+    /*color: #0ae;*/
+    /*text-decoration: underline;*/
+/*}*/
