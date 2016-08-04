@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "graceful-fs": "^4.1.5",
     "gulp": "^3.9.1",
     "gulp-csso": "^2.0.0",
     "gulp-filter": "^4.0.0",
