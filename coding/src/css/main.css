@@ -156,13 +156,29 @@ header .top ul li a {
     color: #fff;
 }
 
+@media only screen and (max-width: 50em) {
+    header .top ul li a{
+        padding: 0 1rem
+    }
+}
+@media only screen and (max-width: 30.0625em) and (max-width: 50em) {
+
+}
+@media only screen and (max-width: 30em) {
+    header .top .tel,
+    header .top ul li:nth-child(3),
+    header .top ul li:nth-child(4){
+        display: none;
+    }
+}
+
 header .main {
     padding: 0;
 }
 
 header .main .brand{
     float: left;
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.5rem 0;
 }
 
 header .main ul {
@@ -176,7 +192,7 @@ header .main ul li {
 
 header .main ul li a{
     display: inline-block;
-    padding: 0 3rem;
+    padding: 0 2.5rem;
     line-height: 5.5rem;
     font-size: 1.6rem;
     font-weight: bold;
@@ -188,6 +204,49 @@ header .main ul li a:active,
 header .main ul li a:visited {
     color: #ffb300;
     background-color: #f8f6f1;
+}
+
+@media only screen and (max-width: 50em) {
+    header .main .brand {
+        float: none;
+        display: block;
+        padding: 0;
+        margin: 1.5rem auto 0.5rem;
+        text-align: center;
+    }
+    header .main ul {
+        text-align: center;
+    }
+
+    header .main ul li{
+        border: none;
+    }
+
+    header .main ul li a{
+        padding: 0 1.5rem;
+        color: #333;
+    }
+    header .main ul li a:hover,
+    header .main ul li a:active,
+    header .main ul li a:visited {
+        color: #777;
+        background-color: #f8f6f1;
+    }
+}
+
+@media only screen and(max-width: 30em) {
+    header .main ul li{
+        line-height: 3rem;
+    }
+
+    header .main ul li:first-child{
+        display: none;
+    }
+
+    header .main ul li a{
+        font-weight: normal;
+        padding: 0 0.5rem;
+    }
 }
 
 /* 网站主要内容 */
@@ -242,10 +301,49 @@ header .main ul li a:visited {
     line-height: 3rem;
     color: #fff;
 }
-/* 滚动广告 */
-.ad {
-    display: none;
+
+@media only screen and (max-width: 50em) {
+    .trans-data {
+        padding: 1rem 0.5rem;
+    }
+    .trans-data span {
+        font-size: 1.2rem;
+    }
+
+    .trans-data span.trans-money {
+        font-size: 1.6rem;
+        margin: 0;
+        padding: 0;
+        letter-spacing: inherit;
+        box-shadow: none;
+        background: transparent;
+    }
+    .trans-report a {
+        font-size: 1.2rem;
+    }
 }
+
+@media only screen and (max-width: 30em) {
+
+    .transaction {
+        padding: 0.5rem 0;
+    }
+
+    .trans-data, .trans-report {
+        float: none;
+        text-align: center;
+    }
+
+    .trans-data, .trans-report a {
+        padding: 0;
+    }
+}
+
+/* 滚动广告 */
+
+/*.ad {*/
+    /*!*display: none;*!*/
+/*}*/
 
 /* 平台特点 */
 
@@ -257,7 +355,7 @@ header .main ul li a:visited {
 
 .feature .item{
     display: inline-block;
-    width: calc(33.33333333333% - 3rem);
+    width: calc(33.33333% - 3rem);
     padding: 1rem;
     font-size: 1.4rem;
     background-color: #fff;
@@ -282,7 +380,38 @@ header .main ul li a:visited {
     color: #999;
 }
 
+@media only screen and (min-width: 30.0625em) and (max-width: 50rem) {
+
+    .feature .item h3,
+    .feature .item p {
+        display: block;
+        width: 100%;
+        font-size: 2.6rem;
+        text-align: center;
+    }
+
+    .feature .item p {
+        font-size: 1.2rem
+    }
+}
+
+@media only screen and (max-width: 30rem) {
+    .feature {
+        width: 96%;
+        margin: 1rem auto;
+    }
+
+    .feature .item {
+        display: block;
+        width: auto;
+    }
+    .feature .item + .item {
+        margin: 1rem 0 0;
+    }
+}
+
 /* 最新公告 */
+
 .notice {
     width: 90%;
     margin: 2rem auto;
@@ -322,6 +451,24 @@ header .main ul li a:visited {
     margin-right: 2rem;
     color: #ff9900;
 }
+
+@media only screen and (max-width: 30em) {
+
+    .notice {
+        width: 96%;
+        margin: 1rem auto;
+        font-size: 1.2rem;
+    }
+
+    .notice a {
+        margin-left: 1rem;
+    }
+
+    .notice a span {
+        display: none;
+    }
+}
+
 
 /* 产品列表 */
 
@@ -451,7 +598,88 @@ header .main ul li a:visited {
     cursor: not-allowed; /*当光标移上去的时候显示禁用图标*/
 }
 
+@media only screen and (max-width: 50rem) {
+    .product h2 {
+        float: none;
+        width: 100%;
+        margin-top: 2rem;
+        font-size: 2.2rem;
+    }
+
+    .product h2 em:first-child {
+        margin-top: 0;
+    }
+
+    .product h2 em {
+        display: inline;
+        font-size: 1.2rem;
+    }
+
+    .product .product-content {
+        float: none;
+        width: 100%;
+    }
+
+    .product .product-content .item h3 {
+        margin-bottom: 0;
+    }
+
+    .product .product-content .item h3 em {
+        font-size: 2.4rem;
+    }
+
+    .product .product-content .item .info {
+        padding: 1rem 1rem 0;
+        font-size: 1.2rem;
+    }
+
+    .product .product-content .item .info p span {
+        font-size: 2rem;
+    }
+
+    .product .product-content .item .buy a{
+        margin: 0.5rem auto;
+    }
+}
+
+@media only screen and (max-width: 30em) {
+
+    .product h2 em:first-child:before {
+        content: " ";
+        display: table;
+    }
+
+    .product .product-content .item h3 em {
+        font-size: 2rem;
+        margin-right: 0;
+    }
+
+    .product .product-content .item .info {
+        float: right;
+        width: 70%;
+        padding: 1rem 0;
+        border: none;
+    }
+
+    .product .product-content .item .info p span {
+        font-size: 1.8rem;
+    }
+
+    .product .product-content .item .buy {
+        clear: both;
+        float: none;
+        width: 100%;
+        padding: 1rem 0 2rem;
+    }
+    .product .product-content .item .buy a {
+        margin-top: 0;
+        max-width: 26rem;
+    }
+}
+
+
 /* 底部导航 */
+
 .footer {
     padding: 3rem 0;
     background-color: #fff;
@@ -479,14 +707,37 @@ header .main ul li a:visited {
     float: left;
     width: 15%;
 }
+
 .footer-content ul li {
     font-size: 1.4rem;
     line-height: 2.4rem;
 }
+
 .footer-content ul li.title{
     font-size: 1.6rem;
     line-height: 3rem;
 }
+
+@media only screen and (max-width: 50em) {
+    .footer-content .brand {
+        display: none;
+    }
+
+    .footer-content ul {
+        width: 20%;
+    }
+
+    .footer-content ul li {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .footer-content ul li.title {
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+    }
+}
+
 /* 底部图标 */
 
 footer{
@@ -560,4 +811,70 @@ footer p {
     display: inline-block;
 }
 
+/* ===========
+   打印样式
+   =========== */
+
+@media print {
+    /* 将所有背景色清除，然后文字改成黑色 */
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    /* 所有链接加上下划现 */
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: "(" attr(href) ")";
+    }
+    addr[title]:after {
+        content: "(" attr(title) ")";
+    }
+
+    /* 使用#和javascript的链接不打印href*/
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        /*主要针对opera浏览器，避免在元素内部插入分页符，不要在引文里面就断页了。要么把引文全部放到上一页，要么把引文全部放到下一页*/
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3{
+        /* 当元素内部发生分页的时候，必须在元素底部保留的最少行数：3行。*/
+        orphans: 3;
+        /* 当元素内部发生分页的时候，必须在元素顶部保留的最少行数：3行。*/
+        widows: 3;
+    }
+
+    h2,
+    h3{
+        /* 避免在元素后面插入一个分页符 */
+        page-break-inside: avoid;
+    }
+}
 
